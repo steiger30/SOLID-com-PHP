@@ -9,6 +9,7 @@ class CalculadorPontuacao
 {
     public function recuperarPontuacao($conteudo)
     {
+        return $conteudo->recuperarPontuacao();
         if ($conteudo instanceof Curso) {
             return 100;
         } else if ($conteudo instanceof AluraMais) {
